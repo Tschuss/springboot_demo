@@ -17,3 +17,8 @@ RUN echo 'deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main' >> /
     apt-get clean && \
     rm -rf /var/lib/apt/lists && \
     rm -rf /var/cache/oracle-jdk${JAVA_VER}-installer
+# Standard SSH port
+EXPOSE 22
+
+# Default command
+CMD ["/usr/sbin/sshd", "-D"]
