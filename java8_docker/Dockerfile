@@ -40,7 +40,7 @@ RUN curl -s https://get.sdkman.io | bash
 
     
 # Standard SSH port
-EXPOSE 22 8761
+EXPOSE 22
 
 # Default command
 CMD ["/usr/sbin/sshd", "-D"]
