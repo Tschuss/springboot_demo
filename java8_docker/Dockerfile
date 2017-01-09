@@ -1,6 +1,5 @@
 # Copyright 2016 Jiglesgom
 
-
 FROM ubuntu:trusty
 MAINTAINER jiglesgom <jiglesgom@gmail.com>
 
@@ -38,7 +37,6 @@ RUN curl -s https://get.sdkman.io | bash
 #RUN env GIT_SSL_NO_VERIFY=true git clone https://github.com/spring-cloud-samples/eureka.git
 #RUN cd eureka &&\ mvn -X spring-boot:run 
 
-    
 # Standard SSH port
 EXPOSE 22
 
